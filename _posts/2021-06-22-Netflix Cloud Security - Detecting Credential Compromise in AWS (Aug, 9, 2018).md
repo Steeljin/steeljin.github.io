@@ -28,7 +28,7 @@ https://netflixtechblog.com/netflix-cloud-security-detecting-credential-compromi
 우리는 먼저 CloudTrail에서 추출한 모든 EC2 Assume Role 데이터 테이블을 구성하겠습니다. 각 테이블 항목은 인스턴스ID, Assumed Role, API 호출 IP Address, TTL 값(TTL이 이 테이블을 작게 만드는데 도움됨)을 나타냅니다.
 우리는 인스턴스에서 API 호출의 Source IP를 검사하여 호출자가 AWS 환경안에 있는지 빠르게 확인할 수 있습니다.
 
-![Picture1](./2021-06-22/(Aug,%209,%202018)%20Netflix%20Cloud%20Security%20-%20Detecting%20Credential%20Compromise%20in%20AWS-1.png)
+![Picture1](/assets/img/2021-06-22/(Aug,%209,%202018)%20Netflix%20Cloud%20Security%20-%20Detecting%20Credential%20Compromise%20in%20AWS-1.png)
 
 ## Assume Role
 여러분이 IAM 역할로 EC2 인스턴스를 시작하면 AWS EC2 서비스가 인스턴스에 지정된 역할을 맡고 해당 임시 자격 증명을 EC2 metadata 서비스에 전달합니다. 이 AssumeRole 작업은 아래 키 필드로 CloudTrail에 표시됩니다.  
